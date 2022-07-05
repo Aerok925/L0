@@ -1,0 +1,99 @@
+2022-07-03 18:48:55.686 MSK [94330] LOG:  starting PostgreSQL 14.1 on aarch64-apple-darwin20.6.0, compiled by Apple clang version 12.0.5 (clang-1205.0.22.9), 64-bit
+2022-07-03 18:48:55.688 MSK [94330] LOG:  listening on IPv6 address "::1", port 5432
+2022-07-03 18:48:55.688 MSK [94330] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2022-07-03 18:48:55.689 MSK [94330] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2022-07-03 18:48:55.691 MSK [94331] LOG:  database system was shut down at 2022-07-03 18:48:55 MSK
+2022-07-03 18:48:55.693 MSK [94330] LOG:  database system is ready to accept connections
+2022-07-03 19:06:28.289 MSK [99032] ERROR:  syntax error at or near "gen_random_uuid" at character 60
+2022-07-03 19:06:28.289 MSK [99032] STATEMENT:  CREATE Table test(
+	    name text,
+	    id  UUID PRIMARY KEY gen_random_uuid()
+	
+	)
+2022-07-03 19:07:05.276 MSK [99032] ERROR:  column "id" is of type integer but default expression is of type uuid
+2022-07-03 19:07:05.276 MSK [99032] HINT:  You will need to rewrite or cast the expression.
+2022-07-03 19:07:05.276 MSK [99032] STATEMENT:  CREATE Table test(
+	    id  int PRIMARY KEY DEFAULT gen_random_uuid(),
+	    name text
+	
+	)
+2022-07-03 19:08:01.423 MSK [99032] ERROR:  relation "test" already exists
+2022-07-03 19:08:01.423 MSK [99032] STATEMENT:  CREATE Table test(
+	    id  UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+	    name text
+	
+	)
+2022-07-03 19:08:34.682 MSK [99032] ERROR:  syntax error at or near "test" at character 8
+2022-07-03 19:08:34.682 MSK [99032] STATEMENT:  insert test(name) VALUE ('qwe')
+2022-07-03 19:08:54.698 MSK [99032] ERROR:  syntax error at or near "VALUE" at character 24
+2022-07-03 19:08:54.698 MSK [99032] STATEMENT:  insert INTO test(name) VALUE ('qwe')
+2022-07-03 19:09:02.721 MSK [99032] ERROR:  syntax error at or near "'qwe'" at character 25
+2022-07-03 19:09:02.721 MSK [99032] STATEMENT:  insert INTO test(name) ('qwe')
+2022-07-03 19:13:10.667 MSK [985] ERROR:  relation "test" does not exist at character 22
+2022-07-03 19:13:10.667 MSK [985] STATEMENT:  select id, name from test
+2022-07-03 19:13:57.104 MSK [1199] ERROR:  relation "test" does not exist at character 22
+2022-07-03 19:13:57.104 MSK [1199] STATEMENT:  select id, name from test;
+2022-07-03 19:14:03.660 MSK [1301] ERROR:  function get_order() does not exist at character 22
+2022-07-03 19:14:03.660 MSK [1301] HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2022-07-03 19:14:03.660 MSK [1301] STATEMENT:  select id, name from get_order();
+2022-07-03 19:16:07.321 MSK [1843] ERROR:  syntax error at or near "'test'" at character 22
+2022-07-03 19:16:07.321 MSK [1843] STATEMENT:  select id, name from 'test';
+2022-07-03 19:16:13.630 MSK [1863] ERROR:  relation "test" does not exist at character 22
+2022-07-03 19:16:13.630 MSK [1863] STATEMENT:  select id, name from test;
+2022-07-03 19:16:15.043 MSK [1882] ERROR:  relation "test" does not exist at character 22
+2022-07-03 19:16:15.043 MSK [1882] STATEMENT:  select id, name from test;
+2022-07-03 19:46:59.416 MSK [9900] FATAL:  database "L0" does not exist
+2022-07-03 19:47:10.511 MSK [10002] FATAL:  database "L0" does not exist
+2022-07-03 19:47:16.144 MSK [10022] FATAL:  database "L0" does not exist
+2022-07-03 19:47:35.043 MSK [10126] FATAL:  database "L0" does not exist
+2022-07-03 19:47:58.647 MSK [10234] FATAL:  database "L0" does not exist
+2022-07-03 19:48:03.584 MSK [10335] FATAL:  database "L0" does not exist
+2022-07-03 19:48:10.200 MSK [10356] FATAL:  database "test" does not exist
+2022-07-03 19:48:16.298 MSK [10376] FATAL:  database "l0" does not exist
+2022-07-03 19:48:36.984 MSK [10484] FATAL:  database "test" does not exist
+2022-07-03 19:48:53.901 MSK [10590] FATAL:  database "postgres@localhost" does not exist
+2022-07-03 19:49:17.788 MSK [10681] FATAL:  database "L0" does not exist
+2022-07-04 14:26:48.197 MSK [92081] LOG:  starting PostgreSQL 14.1 on aarch64-apple-darwin20.6.0, compiled by Apple clang version 12.0.5 (clang-1205.0.22.9), 64-bit
+2022-07-04 14:26:48.198 MSK [92081] LOG:  listening on IPv6 address "::1", port 5432
+2022-07-04 14:26:48.198 MSK [92081] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2022-07-04 14:26:48.202 MSK [92081] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2022-07-04 14:26:48.205 MSK [92082] LOG:  database system was interrupted; last known up at 2022-07-03 19:53:56 MSK
+2022-07-04 14:26:48.244 MSK [92082] LOG:  database system was not properly shut down; automatic recovery in progress
+2022-07-04 14:26:48.247 MSK [92082] LOG:  redo starts at 0/1747BA0
+2022-07-04 14:26:48.248 MSK [92082] LOG:  invalid record length at 0/1747C88: wanted 24, got 0
+2022-07-04 14:26:48.248 MSK [92082] LOG:  redo done at 0/1747C50 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2022-07-04 14:26:48.253 MSK [92081] LOG:  database system is ready to accept connections
+2022-07-05 13:26:45.428 MSK [41367] LOG:  starting PostgreSQL 14.1 on aarch64-apple-darwin20.6.0, compiled by Apple clang version 12.0.5 (clang-1205.0.22.9), 64-bit
+2022-07-05 13:26:45.429 MSK [41367] LOG:  listening on IPv6 address "::1", port 5432
+2022-07-05 13:26:45.429 MSK [41367] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2022-07-05 13:26:45.430 MSK [41367] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2022-07-05 13:26:45.434 MSK [41369] LOG:  database system was interrupted; last known up at 2022-07-04 14:31:51 MSK
+2022-07-05 13:26:45.484 MSK [41369] LOG:  database system was not properly shut down; automatic recovery in progress
+2022-07-05 13:26:45.485 MSK [41369] LOG:  redo starts at 0/176D278
+2022-07-05 13:26:45.485 MSK [41369] LOG:  invalid record length at 0/176D360: wanted 24, got 0
+2022-07-05 13:26:45.485 MSK [41369] LOG:  redo done at 0/176D328 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2022-07-05 13:26:45.490 MSK [41367] LOG:  database system is ready to accept connections
+2022-07-05 13:50:30.265 MSK [47598] ERROR:  syntax error at or near "Value" at character 25
+2022-07-05 13:50:30.265 MSK [47598] STATEMENT:  insert into test (name) Value ('%s')
+2022-07-05 13:50:57.152 MSK [47704] ERROR:  syntax error at or near "Value" at character 25
+2022-07-05 13:50:57.152 MSK [47704] STATEMENT:  insert into test (name) Value ('%s')
+2022-07-05 13:51:02.502 MSK [47807] ERROR:  column "name" of relation "test" does not exist at character 19
+2022-07-05 13:51:02.502 MSK [47807] STATEMENT:  insert into test (name) Values ('%s')
+2022-07-05 13:51:28.692 MSK [47910] ERROR:  syntax error at or near "%" at character 33
+2022-07-05 13:51:28.692 MSK [47910] STATEMENT:  insert into test (name) Values (%s)
+2022-07-05 13:51:40.772 MSK [48012] ERROR:  syntax error at or near ")" at character 37
+2022-07-05 13:51:40.772 MSK [48012] STATEMENT:  insert into test (name) Values (`%s`)
+2022-07-05 13:51:51.286 MSK [48034] ERROR:  column "name" of relation "test" does not exist at character 19
+2022-07-05 13:51:51.286 MSK [48034] STATEMENT:  insert into test (name) Values ('%s')
+2022-07-05 13:52:15.185 MSK [48139] ERROR:  syntax error at or near "$" at character 33
+2022-07-05 13:52:15.185 MSK [48139] STATEMENT:  insert into test (name) Values ($s)
+2022-07-05 13:52:52.843 MSK [48335] ERROR:  column "name" of relation "test" does not exist at character 19
+2022-07-05 13:52:52.843 MSK [48335] STATEMENT:  insert into test (name) Values ($1)
+2022-07-05 14:35:37.687 MSK [59661] ERROR:  syntax error at or near "test" at character 18
+2022-07-05 14:35:37.687 MSK [59661] STATEMENT:  select data form test
+2022-07-05 14:35:56.397 MSK [59767] ERROR:  syntax error at or near "test" at character 18
+2022-07-05 14:35:56.397 MSK [59767] STATEMENT:  select data form test
+2022-07-05 18:22:23.603 MSK [41367] LOG:  received smart shutdown request
+2022-07-05 18:22:23.606 MSK [41367] LOG:  background worker "logical replication launcher" (PID 41376) exited with exit code 1
+2022-07-05 18:22:23.606 MSK [41371] LOG:  shutting down
+2022-07-05 18:22:23.623 MSK [41367] LOG:  database system is shut down

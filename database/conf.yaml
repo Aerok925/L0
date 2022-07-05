@@ -1,0 +1,4 @@
+dbname: "postgres"
+password: "2140174"
+user: "jnappa"
+sslmode: "disable"
