@@ -7,6 +7,9 @@ import (
 	"sync"
 )
 
+// FileInCache - записывает данные в cache
+// return value в случае успеха возвращает nil
+// error в случае провала
 func (cache *Cache) FileInCache(str []byte) error {
 	mutex := sync.Mutex{}
 	mutex.Lock()

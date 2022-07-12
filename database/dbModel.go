@@ -15,6 +15,9 @@ type DataBase struct {
 	con      *sql.DB
 }
 
+// Init - возвращает данные для поключение к БД
+// return value - в случае успеха возвращает данные для поключения к БД
+// в случае провала error
 func Init(name string) (*DataBase, error) {
 	db := &DataBase{
 		fileName: name,

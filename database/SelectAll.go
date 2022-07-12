@@ -2,6 +2,7 @@ package database
 
 import "fmt"
 
+// SelectAll - возвращает slice строк с данными из таблицы
 func (db *DataBase) SelectAll() []string {
 	var retValue []string
 	query, err := db.con.Query("select (data) from test")

@@ -154,3 +154,59 @@
 2022-07-12 12:04:21.206 MSK [72697] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
 2022-07-12 12:04:21.210 MSK [72699] LOG:  database system was shut down at 2022-07-12 00:49:43 MSK
 2022-07-12 12:04:21.224 MSK [72697] LOG:  database system is ready to accept connections
+2022-07-12 20:23:01.026 MSK [72697] LOG:  received smart shutdown request
+2022-07-12 20:23:01.028 MSK [72697] LOG:  background worker "logical replication launcher" (PID 72705) exited with exit code 1
+2022-07-12 20:23:01.029 MSK [72700] LOG:  shutting down
+2022-07-12 20:23:01.043 MSK [72697] LOG:  database system is shut down
+2022-07-13 01:00:06.450 MSK [71156] LOG:  starting PostgreSQL 14.1 on aarch64-apple-darwin20.6.0, compiled by Apple clang version 12.0.5 (clang-1205.0.22.9), 64-bit
+2022-07-13 01:00:06.451 MSK [71156] LOG:  listening on IPv6 address "::1", port 5432
+2022-07-13 01:00:06.451 MSK [71156] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2022-07-13 01:00:06.456 MSK [71156] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2022-07-13 01:00:06.458 MSK [71157] LOG:  database system was shut down at 2022-07-12 20:23:01 MSK
+2022-07-13 01:00:06.460 MSK [71156] LOG:  database system is ready to accept connections
+2022-07-13 01:02:10.003 MSK [71156] LOG:  received fast shutdown request
+2022-07-13 01:02:10.004 MSK [71156] LOG:  aborting any active transactions
+2022-07-13 01:02:10.005 MSK [71156] LOG:  background worker "logical replication launcher" (PID 71163) exited with exit code 1
+2022-07-13 01:02:10.005 MSK [71158] LOG:  shutting down
+2022-07-13 01:02:10.015 MSK [71156] LOG:  database system is shut down
+2022-07-13 01:02:10.666 MSK [71751] LOG:  starting PostgreSQL 14.1 on aarch64-apple-darwin20.6.0, compiled by Apple clang version 12.0.5 (clang-1205.0.22.9), 64-bit
+2022-07-13 01:02:10.667 MSK [71751] LOG:  listening on IPv6 address "::1", port 5432
+2022-07-13 01:02:10.667 MSK [71751] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2022-07-13 01:02:10.671 MSK [71751] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2022-07-13 01:02:10.674 MSK [71752] LOG:  database system was shut down at 2022-07-13 01:02:10 MSK
+2022-07-13 01:02:10.676 MSK [71751] LOG:  database system is ready to accept connections
+2022-07-13 01:02:20.476 MSK [71751] LOG:  received fast shutdown request
+2022-07-13 01:02:20.476 MSK [71751] LOG:  aborting any active transactions
+2022-07-13 01:02:20.477 MSK [71751] LOG:  background worker "logical replication launcher" (PID 71758) exited with exit code 1
+2022-07-13 01:02:20.477 MSK [71753] LOG:  shutting down
+2022-07-13 01:02:20.487 MSK [71751] LOG:  database system is shut down
+2022-07-13 01:06:14.236 MSK [72957] LOG:  starting PostgreSQL 14.1 on aarch64-apple-darwin20.6.0, compiled by Apple clang version 12.0.5 (clang-1205.0.22.9), 64-bit
+2022-07-13 01:06:14.238 MSK [72957] LOG:  listening on IPv6 address "::1", port 5432
+2022-07-13 01:06:14.238 MSK [72957] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2022-07-13 01:06:14.238 MSK [72957] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2022-07-13 01:06:14.240 MSK [72958] LOG:  database system was shut down at 2022-07-13 01:02:20 MSK
+2022-07-13 01:06:14.243 MSK [72957] LOG:  database system is ready to accept connections
+2022-07-13 01:06:35.421 MSK [72957] LOG:  received fast shutdown request
+2022-07-13 01:06:35.422 MSK [72957] LOG:  aborting any active transactions
+2022-07-13 01:06:35.422 MSK [72957] LOG:  background worker "logical replication launcher" (PID 72964) exited with exit code 1
+2022-07-13 01:06:35.423 MSK [72959] LOG:  shutting down
+2022-07-13 01:06:35.433 MSK [72957] LOG:  database system is shut down
+2022-07-13 01:06:55.396 MSK [73221] LOG:  starting PostgreSQL 14.1 on aarch64-apple-darwin20.6.0, compiled by Apple clang version 12.0.5 (clang-1205.0.22.9), 64-bit
+2022-07-13 01:06:55.398 MSK [73221] LOG:  listening on IPv6 address "::1", port 5432
+2022-07-13 01:06:55.398 MSK [73221] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2022-07-13 01:06:55.402 MSK [73221] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2022-07-13 01:06:55.404 MSK [73222] LOG:  database system was shut down at 2022-07-13 01:06:35 MSK
+2022-07-13 01:06:55.406 MSK [73221] LOG:  database system is ready to accept connections
+2022-07-13 01:08:13.670 MSK [73221] LOG:  received fast shutdown request
+2022-07-13 01:08:13.670 MSK [73221] LOG:  aborting any active transactions
+2022-07-13 01:08:13.671 MSK [73221] LOG:  background worker "logical replication launcher" (PID 73228) exited with exit code 1
+2022-07-13 01:08:13.671 MSK [73223] LOG:  shutting down
+2022-07-13 01:08:13.681 MSK [73221] LOG:  database system is shut down
+2022-07-13 01:08:39.532 MSK [73768] LOG:  starting PostgreSQL 14.1 on aarch64-apple-darwin20.6.0, compiled by Apple clang version 12.0.5 (clang-1205.0.22.9), 64-bit
+2022-07-13 01:08:39.533 MSK [73768] LOG:  listening on IPv6 address "::1", port 5432
+2022-07-13 01:08:39.533 MSK [73768] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2022-07-13 01:08:39.538 MSK [73768] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2022-07-13 01:08:39.540 MSK [73769] LOG:  database system was shut down at 2022-07-13 01:08:13 MSK
+2022-07-13 01:08:39.542 MSK [73768] LOG:  database system is ready to accept connections
+2022-07-13 01:09:50.325 MSK [74200] FATAL:  role "j1nappa" does not exist
+2022-07-13 01:10:24.162 MSK [74423] FATAL:  database "1postgres" does not exist
