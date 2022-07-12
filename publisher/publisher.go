@@ -11,7 +11,7 @@ func main() {
 	fu := func(msg *stan.Msg) {
 		fmt.Println(string(msg.Data))
 	}
-	models := []string{"../model.json", "../model1.json"}
+	models := []string{"../model.json", "../model1.json", "../model2.json", "../model4.json"}
 	sc, err := stan.Connect("test-cluster", "1234")
 	if err != nil {
 		fmt.Println(err, sc)

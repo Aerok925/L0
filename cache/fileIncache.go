@@ -4,9 +4,13 @@ import (
 	"encoding/json"
 	"errors"
 	"nats/model"
+	"sync"
 )
 
 func (cache *Cache) FileInCache(str []byte) error {
+	mutex := sync.Mutex{}
+	mutex.Lock()
+	defer mutex.Unlock()
 	var temp model.DataAll
 	err := json.Unmarshal(str, &temp)
 	if err != nil {

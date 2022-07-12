@@ -2,17 +2,15 @@ package main
 
 import (
 	"fmt"
+	"github.com/gorilla/mux"
 	_ "github.com/lib/pq"
 	"github.com/nats-io/stan.go"
+	"html/template"
 	"log"
 	"nats/cache"
 	"nats/database"
-	"time"
+	"net/http"
 )
-
-func handlerMessage(msg *stan.Msg, ch *cache.Cache, base *database.DataBase) {
-
-}
 
 func main() {
 
@@ -47,9 +45,30 @@ func main() {
 	}
 	subscribe, err := connect.Subscribe("1231", fu)
 	if err != nil {
+		log.Println(err)
 		return
 	}
 	defer subscribe.Close()
 
-	time.Sleep(time.Minute)
+	r := mux.NewRouter()
+	r.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+		http.ServeFile(w, r, "htmlTemlates/FoundUid.html")
+	})
+	r.HandleFunc("/Uid", func(w http.ResponseWriter, r *http.Request) {
+
+		uid := r.FormValue("uid")
+
+		forUid, err := cach.FoundForUid(uid)
+		tmpl, _ := template.ParseFiles("htmlTemlates/Uid.html")
+		if err != nil {
+			tmpl.Execute(w, forUid)
+			return
+		}
+
+		tmpl.Execute(w, forUid)
+		//http.ServeFile(w, r, "htmlTemlates/index.html")
+	})
+
+	http.Handle("/", r)
+	http.ListenAndServe(":8181", nil)
 }

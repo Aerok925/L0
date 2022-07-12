@@ -4,7 +4,31 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="734c8c92-628b-423e-8d53-531dfa75ffc2" name="Changes" comment="" />
+    <list default="true" id="734c8c92-628b-423e-8d53-531dfa75ffc2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/htmlTemlates/FoundUid.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1d4443b7-7748-4b0c-a7d3-c8242e5849bf.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1d4443b7-7748-4b0c-a7d3-c8242e5849bf.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1d4443b7-7748-4b0c-a7d3-c8242e5849bf/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1d4443b7-7748-4b0c-a7d3-c8242e5849bf/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BD/base/14021/pg_internal.init" beforeDir="false" afterPath="$PROJECT_DIR$/BD/base/14021/pg_internal.init" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BD/base/16385/pg_internal.init" beforeDir="false" afterPath="$PROJECT_DIR$/BD/base/16385/pg_internal.init" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BD/global/pg_control" beforeDir="false" afterPath="$PROJECT_DIR$/BD/global/pg_control" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BD/global/pg_internal.init" beforeDir="false" afterPath="$PROJECT_DIR$/BD/global/pg_internal.init" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BD/pg_stat/db_0.stat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BD/pg_stat/db_14021.stat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BD/pg_stat/db_16385.stat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BD/pg_stat/global.stat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BD/pg_wal/000000010000000000000001" beforeDir="false" afterPath="$PROJECT_DIR$/BD/pg_wal/000000010000000000000001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BD/pg_xact/0000" beforeDir="false" afterPath="$PROJECT_DIR$/BD/pg_xact/0000" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BD/postgresql.log" beforeDir="false" afterPath="$PROJECT_DIR$/BD/postgresql.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/fileIncache.go" beforeDir="false" afterPath="$PROJECT_DIR$/cache/fileIncache.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client.go" beforeDir="false" afterPath="$PROJECT_DIR$/client.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/Insert.go" beforeDir="false" afterPath="$PROJECT_DIR$/database/Insert.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model1.json" beforeDir="false" afterPath="$PROJECT_DIR$/model1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/publisher/publisher.go" beforeDir="false" afterPath="$PROJECT_DIR$/publisher/publisher.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,10 +38,14 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Go File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="GOROOT" url="file:///usr/local/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
       <filtered-out-file-type name="LOCAL_BRANCH" />
@@ -30,13 +58,14 @@
     <option name="indexEntireGoPath" value="false" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/go.mod" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/go.sum" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/go.mod" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2BO8GWNY6PSQtzlP5pRWEwmDkyX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -44,6 +73,7 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -57,6 +87,7 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/htmlTemlates" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -66,6 +97,17 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
