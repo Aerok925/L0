@@ -14,10 +14,11 @@ import (
 func (db *DataBase) Connect() (err error) {
 	constr := fmt.Sprintf("user=%s password=%s dbname=%s sslmode=%s", db.User, db.Pass, db.Dbname, db.Sslmode)
 	db.con, err = sql.Open("postgres", constr)
+	_, err = db.con.Query("select (data) from test")
 	if err != nil {
 		return errors.New("Not connect")
 	}
-	log.Println(db.con)
+	log.Println("Connected!")
 	return nil
 
 }
